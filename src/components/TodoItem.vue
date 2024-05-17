@@ -5,6 +5,8 @@
       <input v-if="task" v-model="task.text" />
       <input v-if="task" v-model="task.date" type="date" />
       <input v-if="task" v-model="task.time" type="time" />
+      <!-- v-if 載入的時間點  v-show 一開始就會載入-->
+      <!-- :key 通常不設定index 要設定pk -->
     </div>
     <button @click="deleteTask">刪除</button>
   </div>
